@@ -1,0 +1,111 @@
+:root {
+  --primary-color: rgba(229, 234, 250, 1);
+  --secondary-color: rgba(229, 234, 250, 0.41);
+  --button-primary-color: rgba(198, 255, 189, 0.56);
+  --button-secondary-color: rgba(255, 198, 198, 0.56);
+  --button-tertiary-color: #007bff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--secondary-color);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: var(--primary-color);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin: 30px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logo-image {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Button Styles */
+
+.button-container {
+  display: flex;
+  margin: 20px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: var(--button-primary-color);
+  color: black;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+.login-button:hover {
+  background-color: var(--button-tertiary-color);
+}
+
+.register-button {
+  padding: 10px 20px;
+  background-color: var(--button-primary-color);
+  color: black;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.register-button:hover {
+  background-color: var(--button-tertiary-color);
+}
+
+.close-button {
+  padding: 10px 20px;
+  background-color: var(--button-primary-color);
+  color: black;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 150px;
+}
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+  .main {
+    flex-direction: row;
+  }
+  .header {
+    width: 30vw;
+  }
+  .image-container {
+    width: 70vw;
+  }
+  .button-container {
+    flex-direction: column;
+    margin: 30px;
+    gap: 20px;
+  }
+}
